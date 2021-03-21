@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add a member</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="add-header">
+        <h1>add a member</h1>
+        <button class="back-btn search-btn">back</button>
+    </header>
+
+    <form name="addForm" class="addForm" action="" autocomplete="off">
+        <fieldset>
+            <legend>General</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" pattern="[a-zA-Z]{1,20}\s[a-zA-Z]{1,20}" required >
+
+            <label for="age">Age</label>
+            <input type="number" name="age" min="20" max="60" id="age" required>
+
+            <label for="occupation">Occupation</label>
+            <input type="text" name="occupation" id="occupation" pattern="[a-zA-Z\s,:-]{5,50}" required>
+        </fieldset>
+
+        <fieldset class="gender-field">
+            <legend>Gender</legend>
+            <label for="male" class="gender-label"><input type="radio" name="gender" value="male" id="male" required>Male</label>
+            
+            <label for="female" class="gender-label"><input type="radio" name="gender" value="female" id="female" required>Female</label>
+            
+            <label for="others" class="gender-label"><input type="radio" name="gender" value="others" id="others" required>Others</label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">phone</label>
+            <input type="text" name="phone" id="phone" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Social links</legend>
+            <label for="flink">Facebook</label>
+            <input type="text" name="flink" id="flink" required>
+
+            <label for="ilink">Instagram</label>
+            <input type="text" name="ilink" id="ilink" required>
+
+            <label for="tlink">Twitter</label>
+            <input type="text" name="tlink" id="tlink" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Others</legend>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" placeholder="write your description..." required></textarea>
+
+            <label for="image">upload your photo</label>
+            <input type="text" name="image" id="image" disabled value="profiles/image (10).jpeg">
+        </fieldset>
+
+        <div class="btn-container2">
+            <button type="submit" class="search-btn">add</button>
+            <button type="reset" class="add-profile">reset</button>
+        </div>
+        
+    </form>
+
+    <script src="/js/add.js"></script>
+    <script>
+        const backBtn = document.querySelector('.back-btn')
+        backBtn.addEventListener("click", goback)
+        
+        function goback(){
+            window.location.replace("index.html")
+        }
+    </script>
+</body>
+</html>

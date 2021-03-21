@@ -1,0 +1,325 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+}
+.banner-row{
+    width: 100%;
+    height: auto;
+    background-color: rgb(92, 255, 247);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+    box-shadow: 0px 10px 5px -6px rgb(0, 89, 255);
+}
+.banner-row>h1{
+    font-family: poppins;
+    font-weight: 700;
+    margin-left: 8px;
+    font-size: 33px;
+    color: white;
+    text-shadow: 2px 2px 1px rgb(0, 60, 255);
+}
+.banner-row>form{
+    display: flex;
+    justify-content: space-around;
+}
+.search-label{
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    font-family: poppins;
+    font-size: 22px;
+    padding: 0px 10px;
+    border-radius: 25px;
+    outline: none;
+}
+.search-label:focus{
+    border: 2.8px solid rgb(0, 60, 255);
+}
+.search-btn, .add-profile{
+    font-family: poppins;
+    border-style: none;
+    border-radius: 25px;
+    padding: 3px 7px;
+    font-size: 22px;
+    background-color: rgb(0, 60, 255);
+    color: white;
+    transition: all 0.2s;
+    border: 2.8px solid rgb(0, 60, 255);
+}
+.search-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(0, 60, 255);
+    border: 2.8px solid rgb(0, 60, 255);
+}
+.add-profile{
+    background-color: tomato;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid tomato;
+    transition: all 0.2s;
+}
+.add-profile:hover{
+    background-color: white;
+    color: tomato;
+    border: 3px solid tomato;
+}
+.profiles-container{
+    padding: 20px;
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 300px;
+    height: 440px;
+    background-image: linear-gradient(to top right, white 50%, rgb(92, 255, 247));
+    font-family: oswald;
+    font-weight: 500;
+    border-radius: 25px;
+    border: 1px solid rgb(92, 255, 247);
+    box-shadow: -3px 3px 5px rgb(0, 89, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.card-img{
+    width: 140px;
+    border-radius: 50%;
+}
+.card-name{
+    font-size: 27px;
+}
+.card-email{
+    color: tomato;
+}
+.details-container{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid rgb(0, 247, 255);
+    border-radius: 25px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 247, 255));
+    box-shadow: -5px 5px 5px rgb(0, 89, 255);
+}
+.details-head{
+    display: grid;
+    grid-template-columns: 30% 60%;
+}
+.head-child1>img{
+    width: 220px;
+    border-radius: 50%;
+}
+.head-child2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-family: poppins;
+}
+.row1, .row2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.details-body>p{
+    font-family: poppins;
+    font-size: 25px;
+    justify-content: left;
+    padding: 20px;
+}
+.details-body>h2{
+    font-family: poppins;
+    padding-left: 20px;
+}
+.details-foot{
+    padding: 20px;
+}
+.details-foot img{
+    width: 40px;
+    margin-right: 10px;
+}
+.btn-container{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-container>button{
+    margin-right: 7px;
+}
+.add-header{
+    background-color: rgb(87, 241, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-family: poppins;
+    color: white;
+    text-shadow: 3px 3px 1px tomato;
+    box-shadow: 0px 10px 5px -6px rgb(71, 105, 255);
+}
+.addForm{
+    margin-top: 40px;
+}
+fieldset{
+    background-color: white;
+    border: 3px solid rgb(71, 105, 255);
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 40px 30px;
+    box-shadow: -3px 3px 3px rgb(71, 105, 255);
+    margin-bottom: 40px;
+}
+legend{
+    font-family: pacifico;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 15px;
+    color: rgb(71, 105, 255);
+}
+label{
+    font-family: poppins;
+    font-size: 22px;
+    margin-left: 5px;
+}
+.addForm input{
+    font-family: poppins;
+    font-size: 21px;
+    padding: 3px 7px;
+    outline: none;
+    border-radius: 20px;
+    width: 70%;
+    border: none;
+    border: 2px solid rgb(71, 105, 255);
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+input:focus{
+    border: 2px solid tomato;
+}
+#description{
+    width: 80%;
+    height: 200px;
+    font-family: poppins;
+    font-size: 21px;
+    padding: 5px 7px;
+    border: 2px solid rgb(71, 105, 255);
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 15px;
+}
+#description:focus{
+    border: 2px solid tomato;
+}
+#image{
+    border: none;
+}
+.gender-field{
+    display: flex;
+    
+}
+#name{
+    text-transform: capitalize;
+}
+#male, #female, #others{
+    margin: 0px;
+    padding: 0px;
+    width: 5%;
+}
+.btn-container2{
+    width: 40%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-container2>button{
+    margin-left: 15px;
+}
+
+@media all and (max-width: 900px){
+    .banner-row{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 55px auto;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+    .banner-row>h1{
+        font-size: 30px;
+    }
+    .search-label{
+        width: 60%;
+        max-width: 350px;
+        font-family: poppins;
+        font-size: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        border: 2px solid white;
+        transition: all 0.2s;
+    }
+    .search-label:focus{
+        border: 2px solid rgb(0, 60, 255);
+    }
+    .search-btn, .add-profile{
+        padding: 3px 7px;
+        font-size: 20px;
+    }
+    .search-btn:hover{
+        border: 2px solid rgb(0, 60, 255);
+    }
+    .details-head{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .head-child1{
+        display: flex;
+        justify-content: center;
+    }
+    .head-child1>img{
+        width: 200px;
+        border-radius: 50%;
+    }
+    .head-child2{
+        display: grid;
+        grid-template-columns: 100%;
+        margin-top: 20px;
+    }
+    .row1, .row2{
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    fieldset{
+        width: 90%;
+        max-width: 450px;
+    }
+    .addForm input{
+        width: 85%;
+    }
+    #description{
+        width: 90%;
+    }
+    .btn-container2{
+        width: 90%;
+        max-width: 450px;
+    }
+}
